@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FWHMoreHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="duA-e9-bvi">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.88230064659999996" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="MoR-Pc-LEN"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XrU-rI-5og">
+                    <rect key="frame" x="20" y="30" width="62" height="62"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="62" id="4B9-fT-Hco"/>
+                        <constraint firstAttribute="width" constant="62" id="DyU-lS-fwb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpv-4f-jng">
+                    <rect key="frame" x="110" y="30" width="202" height="18"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUy-pw-3wn">
+                    <rect key="frame" x="110" y="68" width="202" height="18"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAW-CD-z4I">
+                    <rect key="frame" x="0.0" y="100" width="320" height="20"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.88230064659999996" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="4vV-P7-9i5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="FUy-pw-3wn" secondAttribute="trailing" constant="8" id="30J-kA-WjJ"/>
+                <constraint firstItem="XrU-rI-5og" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="330-6I-auf"/>
+                <constraint firstItem="FUy-pw-3wn" firstAttribute="top" secondItem="rpv-4f-jng" secondAttribute="bottom" constant="20" id="4Tf-B6-3k3"/>
+                <constraint firstItem="duA-e9-bvi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9cP-OL-uWa"/>
+                <constraint firstItem="TAW-CD-z4I" firstAttribute="top" secondItem="XrU-rI-5og" secondAttribute="bottom" constant="8" id="GVq-Kr-yWs"/>
+                <constraint firstItem="XrU-rI-5og" firstAttribute="top" secondItem="duA-e9-bvi" secondAttribute="bottom" constant="10" id="Ovy-PR-Atv"/>
+                <constraint firstItem="duA-e9-bvi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PDj-cw-pgT"/>
+                <constraint firstItem="FUy-pw-3wn" firstAttribute="leading" secondItem="XrU-rI-5og" secondAttribute="trailing" constant="28" id="Xpy-iQ-JPd"/>
+                <constraint firstItem="rpv-4f-jng" firstAttribute="leading" secondItem="XrU-rI-5og" secondAttribute="trailing" constant="28" id="h6o-W3-5Ej"/>
+                <constraint firstAttribute="trailing" secondItem="TAW-CD-z4I" secondAttribute="trailing" id="i3b-i3-KPw"/>
+                <constraint firstItem="TAW-CD-z4I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nLv-Sb-cpa"/>
+                <constraint firstItem="rpv-4f-jng" firstAttribute="top" secondItem="duA-e9-bvi" secondAttribute="bottom" constant="10" id="oqM-1H-zGN"/>
+                <constraint firstAttribute="trailing" secondItem="rpv-4f-jng" secondAttribute="trailing" constant="8" id="pNi-M3-oR0"/>
+                <constraint firstAttribute="trailing" secondItem="duA-e9-bvi" secondAttribute="trailing" id="tIB-Dz-XZT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="FWHFooterBlockView" destination="TAW-CD-z4I" id="NB2-TC-mH5"/>
+                <outlet property="FWHHeaderBlockView" destination="duA-e9-bvi" id="CUS-xI-jGr"/>
+                <outlet property="FWHHeaderImg" destination="XrU-rI-5og" id="sTB-ie-bZj"/>
+                <outlet property="FWHName" destination="rpv-4f-jng" id="SQp-aR-GAD"/>
+                <outlet property="FWHPhone" destination="FUy-pw-3wn" id="paL-PG-eOv"/>
+            </connections>
+            <point key="canvasLocation" x="210" y="232"/>
+        </view>
+    </objects>
+</document>

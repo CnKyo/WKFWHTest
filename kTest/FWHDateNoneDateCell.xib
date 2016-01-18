@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FWHDateNoneDateCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QiQ-uh-9qP">
+                        <rect key="frame" x="285" y="16" width="27" height="27"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="27" id="Bv0-Xn-ohS"/>
+                            <constraint firstAttribute="height" constant="27" id="M6j-EB-8GZ"/>
+                        </constraints>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="22:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jri-HU-Ffk">
+                        <rect key="frame" x="8" y="19" width="56" height="21"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="G8M-AW-bVO"/>
+                            <constraint firstAttribute="width" constant="56" id="Jr0-GU-ST8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无安排" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqy-6k-m1q">
+                        <rect key="frame" x="72" y="19" width="205" height="21"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="cWT-Zb-0AT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="QiQ-uh-9qP" firstAttribute="leading" secondItem="zqy-6k-m1q" secondAttribute="trailing" constant="8" id="N39-Fx-6Gb"/>
+                    <constraint firstItem="zqy-6k-m1q" firstAttribute="leading" secondItem="Jri-HU-Ffk" secondAttribute="trailing" constant="8" id="Rjm-yU-mrD"/>
+                    <constraint firstItem="QiQ-uh-9qP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="WDy-ii-Ud2"/>
+                    <constraint firstItem="Jri-HU-Ffk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="cOp-UW-0Im"/>
+                    <constraint firstItem="zqy-6k-m1q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="tee-Xt-G4Q"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="QiQ-uh-9qP" secondAttribute="trailing" id="xAU-kt-yLd"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="Jri-HU-Ffk" secondAttribute="leading" id="yML-gA-nNs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="FWHBtnImg" destination="QiQ-uh-9qP" id="247-vk-F7K"/>
+                <outlet property="FWHContent" destination="zqy-6k-m1q" id="3jO-Vi-IXn"/>
+                <outlet property="FWHTime" destination="Jri-HU-Ffk" id="e9M-6r-WcA"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

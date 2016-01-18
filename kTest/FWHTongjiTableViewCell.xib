@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FWHTongjiTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yMo-Ta-EGf">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="g26-qr-tLW"/>
+                            <constraint firstAttribute="width" constant="50" id="gdc-jr-2du"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试服务" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVR-pc-bgk">
+                        <rect key="frame" x="66" y="8" width="165" height="18"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-12-02 18:20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YY8-OE-xl9">
+                        <rect key="frame" x="66" y="41" width="165" height="17"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥99999元" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNd-g6-C1W">
+                        <rect key="frame" x="245" y="22" width="67" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Gc7-Qs-jSv"/>
+                            <constraint firstAttribute="width" constant="67" id="UJG-lQ-haB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="DVR-pc-bgk" firstAttribute="leading" secondItem="yMo-Ta-EGf" secondAttribute="trailing" constant="8" id="DCi-Da-ClQ"/>
+                    <constraint firstItem="YY8-OE-xl9" firstAttribute="leading" secondItem="yMo-Ta-EGf" secondAttribute="trailing" constant="8" id="LLD-Pb-aoR"/>
+                    <constraint firstItem="VNd-g6-C1W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="14" id="Lk1-W4-Zl4"/>
+                    <constraint firstAttribute="topMargin" secondItem="yMo-Ta-EGf" secondAttribute="top" id="LtD-ec-15H"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="yMo-Ta-EGf" secondAttribute="leading" id="UZL-KD-Ahj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VNd-g6-C1W" secondAttribute="trailing" id="akt-Jm-dvu"/>
+                    <constraint firstItem="VNd-g6-C1W" firstAttribute="leading" secondItem="YY8-OE-xl9" secondAttribute="trailing" constant="14" id="cj9-qo-G4F"/>
+                    <constraint firstItem="DVR-pc-bgk" firstAttribute="top" secondItem="yMo-Ta-EGf" secondAttribute="top" id="jtf-fV-A0U"/>
+                    <constraint firstItem="YY8-OE-xl9" firstAttribute="top" secondItem="DVR-pc-bgk" secondAttribute="bottom" constant="15" id="wyQ-zz-N9X"/>
+                    <constraint firstItem="VNd-g6-C1W" firstAttribute="leading" secondItem="DVR-pc-bgk" secondAttribute="trailing" constant="14" id="xcl-mk-xFd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="FWHDate" destination="YY8-OE-xl9" id="h7u-k0-1Fh"/>
+                <outlet property="FWHImg" destination="yMo-Ta-EGf" id="ZCy-At-KcU"/>
+                <outlet property="FWHPrice" destination="VNd-g6-C1W" id="LwA-qX-UgV"/>
+                <outlet property="FWHServiceName" destination="DVR-pc-bgk" id="6a2-Y4-nTx"/>
+            </connections>
+            <point key="canvasLocation" x="210" y="321.5"/>
+        </tableViewCell>
+    </objects>
+</document>
